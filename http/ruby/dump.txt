@@ -1,0 +1,20 @@
+== Info:   Trying ::1...
+== Info: TCP_NODELAY set
+== Info: Connected to localhost (::1) port 2000 (#0)
+=> Send header, 82 bytes (0x52)
+0000: HEAD /foo HTTP/1.1
+0014: Host: localhost:2000
+002a: User-Agent: curl/7.54.0
+0043: Accept: */*
+0050: 
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 25 bytes (0x19)
+0000: Content-Type: text/html
+<= Recv header, 26 bytes (0x1a)
+0000: Content-Length: 32 bytes
+<= Recv header, 19 bytes (0x13)
+0000: Connection: close
+<= Recv header, 2 bytes (0x2)
+0000: 
+== Info: Closing connection 0
