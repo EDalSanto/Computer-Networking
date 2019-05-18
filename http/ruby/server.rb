@@ -24,7 +24,9 @@ loop do
     request_headers.push(header)
   end
   # read data
-  content_length_header = request_headers.find { |request_header| request_header =~ /Content-Length/ }
+  content_length_header = request_headers.find do |request_header|
+    request_header =~ /Content-Length/
+  end
   if content_length_header
     content_length = content_length_header.scan(/\d/).first.to_i
     data = socket.read(content_length)
